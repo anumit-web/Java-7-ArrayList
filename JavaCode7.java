@@ -80,6 +80,18 @@ public class JavaCode7 {
         for(int i=0; i<int_array_powerball_numbers_from_last_night_clone.length; i++) {
             System.out.print(int_array_powerball_numbers_from_last_night_clone[i] + " "  );
         }
+        System.out.println();
+        
+        // Convert Array of ArrayList
+        // These Are The Most Popular TV Shows of the Streaming Era        
+        int[] time_in_billion_minutes = {113, 108, 104, 72, 61};
+        ArrayList<Integer> time_in_billion_minutes_ArrayList = new ArrayList<Integer>();
+        //ArrayList<Integer> time_in_billion_minutes_ArrayList = Arrays.asList(time_in_billion_minutes);
+        for(int i=0; i<time_in_billion_minutes.length; i++) {
+            time_in_billion_minutes_ArrayList.add(time_in_billion_minutes[i]);
+        }
+        System.out.println("Converted from Array of ArrayList = " + time_in_billion_minutes_ArrayList);
+
 
 
 
