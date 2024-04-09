@@ -69,6 +69,20 @@ public class JavaCode7 {
         Collections.reverse(clone_powerball_numbers_from_last_night_clone);
         System.out.println("Sorted reverse = " + clone_powerball_numbers_from_last_night_clone);
 
+        // Convert ArrayList of Array
+        clone_powerball_numbers_from_last_night_clone = (ArrayList<Integer>) powerball_numbers_from_last_night.clone();
+        int[] int_array_powerball_numbers_from_last_night_clone = new int[powerball_numbers_from_last_night.size()];
+
+        for(int i=0; i< powerball_numbers_from_last_night.size(); i++) {
+            int_array_powerball_numbers_from_last_night_clone[i] = powerball_numbers_from_last_night.get(i);
+        }
+        
+        for(int i=0; i<int_array_powerball_numbers_from_last_night_clone.length; i++) {
+            System.out.print(int_array_powerball_numbers_from_last_night_clone[i] + " "  );
+        }
+
+
+
 
     }
 }
